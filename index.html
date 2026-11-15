@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="Assets/Images/favicon.svg" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Panya | Game Developer</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h3 class="nav__logo">SPX Studio</h3>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link">Home</a></li>
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#connect" class="nav__link">Links</a></li>
+            <li>
+              <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+              >
+                <i class="ri-moon-line" aria-hidden="true"></i>
+                <span class="theme-toggle__label">Dark mode</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <div class="hero__container">
+          <div class="hero__content">
+            <h1 class="hero__title">
+              Hi, I'm Panya.
+              <span class="hero__title-highlight">a Game Developer</span>
+            </h1>
+            <p class="hero__description">
+              I create games and interactive experiences with Unity, Roblox
+              Studio, and Godot 4.
+            </p>
+            <div class="hero__buttons">
+              <a href="#skills" class="button ">View Skills</a>
+              <a href="#connect" class="button button--ghost">Contact Me</a>
+            </div>
+          </div>
+
+          <div class="hero__image">
+            <img src="Assets/Images/Profile.jpg" alt="Portfolio profile photo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="container">
+          <h2 class="section__title">About Me</h2>
+          <div class="about__container">
+            <div class="about__content">
+              <p class="about__description">
+                I'm Panya, a freelance game developer with 4 years of
+                experience creating games and interactive experiences. My
+                background includes working with Roblox Studio, Unity, and
+                Godot 4, along with scripting in Luau and Python.
+              </p>
+              <p class="about__description">
+                I also enjoy designing clear, easy-to-use interfaces that make
+                games more enjoyable.
+              </p>
+            </div>
+            <div class="about__details">
+              <div class="about__detail">
+                <span class="about__detail-label">Experience</span>
+                <strong class="about__detail-value">4 years</strong>
+                <span class="about__detail-caption">Game development</span>
+              </div>
+              <div class="about__detail">
+                <span class="about__detail-label">Current work</span>
+                <strong class="about__detail-value about__status">
+                  Freelance
+                </strong>
+                <span class="about__detail-caption">Game developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section class="skills section" id="skills">
+        <div class="container">
+          <h2 class="section__title">Skills &amp; Tools</h2>
+
+          <div class="skills__container">
+            <div class="skills__content">
+              <div class="skills__info">
+                <h3 class="skills__subtitle">Tools I use</h3>
+                <p class="skills__description">
+                  My experience with game development, scripting, and interface design.
+                </p>
+              </div>
+
+              <div class="skills__list">
+                <div class="skills__card">
+                  <div class="skills__card-header">
+                    <i class="ri-box-3-line skills__icon" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills__card-title">Unity</h3>
+                  <p class="skills__card-description">
+                    Create 2D and 3D games with Unity.
+                  </p>
+                  <div class="skills__level">
+                    <div class="skills__level-label">
+                      <span>Experience</span>
+                      <span>50%</span>
+                    </div>
+                    <div
+                      class="skills__bar"
+                      role="progressbar"
+                      aria-label="Unity experience"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="50"
+                    >
+                      <div class="skills__percentage" style="width: 50%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__card">
+                  <div class="skills__card-header">
+                    <i class="ri-gamepad-line skills__icon" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills__card-title">Roblox Studio</h3>
+                  <p class="skills__card-description">
+                    Build games and interactive experiences for Roblox.
+                  </p>
+                  <div class="skills__level">
+                    <div class="skills__level-label">
+                      <span>Experience</span>
+                      <span>80%</span>
+                    </div>
+                    <div
+                      class="skills__bar"
+                      role="progressbar"
+                      aria-label="Roblox Studio experience"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="80"
+                    >
+                      <div class="skills__percentage" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__card">
+                  <div class="skills__card-header">
+                    <i class="ri-code-box-line skills__icon" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills__card-title">Godot 4</h3>
+                  <p class="skills__card-description">
+                    Develop games with Godot's 2D and 3D tools.
+                  </p>
+                  <div class="skills__level">
+                    <div class="skills__level-label">
+                      <span>Experience</span>
+                      <span>60%</span>
+                    </div>
+                    <div
+                      class="skills__bar"
+                      role="progressbar"
+                      aria-label="Godot 4 experience"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="60"
+                    >
+                      <div class="skills__percentage" style="width: 60%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__card">
+                  <div class="skills__card-header">
+                    <i class="ri-code-s-slash-line skills__icon" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills__card-title">Python</h3>
+                  <p class="skills__card-description">
+                    Write scripts and tools with Python.
+                  </p>
+                  <div class="skills__level">
+                    <div class="skills__level-label">
+                      <span>Experience</span>
+                      <span>60%</span>
+                    </div>
+                    <div
+                      class="skills__bar"
+                      role="progressbar"
+                      aria-label="Python experience"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="60"
+                    >
+                      <div class="skills__percentage" style="width: 60%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__card">
+                  <div class="skills__card-header">
+                    <i class="ri-braces-line skills__icon" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills__card-title">Luau</h3>
+                  <p class="skills__card-description">
+                    Script Roblox gameplay and game systems with Luau.
+                  </p>
+                  <div class="skills__level">
+                    <div class="skills__level-label">
+                      <span>Experience</span>
+                      <span>80%</span>
+                    </div>
+                    <div
+                      class="skills__bar"
+                      role="progressbar"
+                      aria-label="Luau experience"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="80"
+                    >
+                      <div class="skills__percentage" style="width: 80%"></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="skills__card">
+                  <div class="skills__card-header">
+                    <i class="ri-palette-line skills__icon" aria-hidden="true"></i>
+                  </div>
+                  <h3 class="skills__card-title">UX/UI Designer</h3>
+                  <p class="skills__card-description">
+                    Design clear, easy-to-use game screens and experiences.
+                  </p>
+                  <div class="skills__level">
+                    <div class="skills__level-label">
+                      <span>Experience</span>
+                      <span>60%</span>
+                    </div>
+                    <div
+                      class="skills__bar"
+                      role="progressbar"
+                      aria-label="UX/UI design experience"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="60"
+                    >
+                      <div class="skills__percentage" style="width: 60%"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="connect">
+      <div class="container">
+        <h2 class="footer__title">Contact</h2>
+
+        <div class="footer__social">
+          <a href="mailto:pprock.cpt@gmail.com" class="footer__link footer__link--email">
+            <i class="ri-mail-line" aria-hidden="true"></i>
+            <span>pprock.cpt@gmail.com</span>
+          </a>
+          <a
+            href="https://github.com/ROCKERPPROCKTH"
+            class="footer__link footer__link--github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-github-fill" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.youtube.com/@DevRock_qsfpx"
+            class="footer__link footer__link--youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-youtube-fill" aria-hidden="true"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+
+        <p class="footer__copy">© 2026 Panya. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
