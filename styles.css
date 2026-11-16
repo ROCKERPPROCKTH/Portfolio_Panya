@@ -96,6 +96,28 @@ a {
   align-items: center;
 }
 
+.nav__brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.nav__logo-icon {
+  display: block;
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: contain;
+  border-radius: 0.5rem;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.18);
+  background: rgba(255, 255, 255, 0.12);
+  filter: drop-shadow(0 0 0 rgba(255, 255, 255, 0.9));
+}
+
+:root:not([data-theme="dark"]) .nav__logo-icon {
+  outline: 2px solid rgba(255, 255, 255, 0.9);
+  outline-offset: 2px;
+}
+
 .nav__logo {
   font-size: 1.25rem;
   font-weight: 700;
@@ -236,6 +258,75 @@ a {
   color: var(--color-primary);
 }
 
+/* ===== SHOWCASE ===== */
+.showcase {
+  padding-top: 8rem;
+}
+
+.showcase__content {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.showcase__eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.showcase__title {
+  margin-bottom: 1rem;
+}
+
+.showcase__description {
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--color-muted);
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+.showcase__video {
+  position: relative;
+  width: min(100%, 960px);
+  margin: 0 auto;
+  padding-bottom: 56.25%;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+}
+
+.showcase__video iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.showcase__details {
+  max-width: 780px;
+  margin: 2.5rem auto 0;
+  padding: 2rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 30px var(--color-shadow);
+}
+
+.showcase__details h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.showcase__details p {
+  color: var(--color-muted);
+  line-height: 1.8;
+}
+
 /* ===== ABOUT ===== */
 .about__container {
   max-width: 1000px;
@@ -345,6 +436,15 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease, filter 0.25s ease;
+  will-change: transform, box-shadow, filter;
+}
+
+.skills__card:hover {
+  transform: translateY(-8px) scale(1.01);
+  border-color: rgba(96, 165, 250, 0.8);
+  box-shadow: 0 18px 40px rgba(37, 99, 235, 0.18), 0 0 24px rgba(96, 165, 250, 0.25);
+  filter: brightness(1.04) saturate(1.08);
 }
 
 .skills__card-header {

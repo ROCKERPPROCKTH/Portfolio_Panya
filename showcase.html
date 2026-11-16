@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/svg+xml" href="Assets/Images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <title>Showcase | SPX Studio</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <h3 class="nav__logo">SPX Studio</h3>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li><a href="index.html#home" class="nav__link">Home</a></li>
+            <li><a href="index.html#about" class="nav__link">About</a></li>
+            <li><a href="index.html#skills" class="nav__link">Skills</a></li>
+            <li><a href="showcase.html" class="nav__link active-link">Showcase</a></li>
+            <li><a href="index.html#connect" class="nav__link">Links</a></li>
+            <li>
+              <button
+                class="theme-toggle"
+                type="button"
+                aria-label="Switch to dark mode"
+                aria-pressed="false"
+              >
+                <i class="ri-moon-line" aria-hidden="true"></i>
+                <span class="theme-toggle__label">Dark mode</span>
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="showcase">
+      <section class="section">
+        <div class="container">
+          <div class="showcase__content">
+            <p class="showcase__eyebrow">Project Demo</p>
+            <h1 class="section__title showcase__title">Video Showcase</h1>
+            <p class="showcase__description">
+              This short video showcases one of the systems I built and how it works in
+              practice. You can update the title and project description here later.
+            </p>
+          </div>
+
+          <div class="showcase__video">
+            <iframe
+              src="https://www.youtube.com/embed/Z4u6KJBu90w?si=vlHGq4jN-vWU45kb"
+              title="Project showcase video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="showcase__details">
+            <h2>Project Title</h2>
+            <p>
+              This is the placeholder title for the showcase video. You can replace it
+              with the final project name or video title later, while keeping the video
+              embedded directly on this page.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="connect">
+      <div class="container">
+        <h2 class="footer__title">Contact</h2>
+
+        <div class="footer__social">
+          <a href="mailto:pprock.cpt@gmail.com" class="footer__link footer__link--email">
+            <i class="ri-mail-line" aria-hidden="true"></i>
+            <span>pprock.cpt@gmail.com</span>
+          </a>
+          <a
+            href="https://github.com/ROCKERPPROCKTH"
+            class="footer__link footer__link--github"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-github-fill" aria-hidden="true"></i>
+            <span>GitHub</span>
+          </a>
+          <a
+            href="https://www.youtube.com/@DevRock_qsfpx"
+            class="footer__link footer__link--youtube"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <i class="ri-youtube-fill" aria-hidden="true"></i>
+            <span>YouTube</span>
+          </a>
+        </div>
+
+        <p class="footer__copy">© 2026 Panya. All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -26,7 +26,10 @@ themeToggle.addEventListener("click", () => {
 
 const navLinks = Array.from(document.querySelectorAll(".nav__link"));
 const navSections = navLinks
-  .map((link) => document.querySelector(link.getAttribute("href")))
+  .map((link) => {
+    const target = link.getAttribute("href");
+    return target && target.startsWith("#") ? document.querySelector(target) : null;
+  })
   .filter(Boolean);
 
 function updateActiveNavLink() {

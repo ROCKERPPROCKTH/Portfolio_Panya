@@ -15,13 +15,21 @@
   <body>
     <header class="header">
       <nav class="nav">
-        <h3 class="nav__logo">SPX Studio</h3>
+        <div class="nav__brand">
+          <img
+            src="Assets/Images/Logo.png"
+            alt="DevRock logo"
+            class="nav__logo-icon"
+          />
+          <h3 class="nav__logo">DevRock</h3>
+        </div>
 
         <div class="nav__menu">
           <ul class="nav__list">
             <li><a href="#home" class="nav__link active-link">Home</a></li>
             <li><a href="#about" class="nav__link">About</a></li>
             <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#showcase" class="nav__link">Showcase</a></li>
             <li><a href="#connect" class="nav__link">Links</a></li>
             <li>
               <button
@@ -270,6 +278,37 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="showcase section" id="showcase">
+        <div class="container">
+          <div class="showcase__content">
+            <p class="showcase__eyebrow">Project Demo</p>
+            <h2 class="section__title showcase__title">Showcase</h2>
+            <p class="showcase__description">
+              This short video shows one of the systems I built and how it works in
+              practice. You can update the title and description here later.
+            </p>
+          </div>
+
+          <div class="showcase__video">
+            <iframe
+              src="https://www.youtube.com/embed/Z4u6KJBu90w?si=vlHGq4jN-vWU45kb"
+              title="Project showcase video"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="showcase__details">
+            <h3>Video Title</h3>
+            <p>
+              Add your final video title and description here later. The video stays on
+              the same portfolio page so visitors can watch it without leaving the site.
+            </p>
           </div>
         </div>
       </section>
