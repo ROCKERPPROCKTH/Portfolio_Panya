@@ -53,3 +53,22 @@ function updateActiveNavLink() {
 window.addEventListener("scroll", updateActiveNavLink, { passive: true });
 window.addEventListener("hashchange", updateActiveNavLink);
 updateActiveNavLink();
+
+const projectChips = document.querySelectorAll(".project__chip");
+const projectCards = document.querySelectorAll(".project__card");
+
+projectChips.forEach((chip) => {
+  chip.addEventListener("click", () => {
+    const selectedFilter = chip.dataset.filter;
+
+    projectChips.forEach((button) => {
+      button.classList.toggle("is-active", button === chip);
+    });
+
+    projectCards.forEach((card) => {
+      const tags = card.dataset.tags.split(" ");
+      const shouldShow = selectedFilter === "all" || tags.includes(selectedFilter);
+      card.style.display = shouldShow ? "block" : "none";
+    });
+  });
+});

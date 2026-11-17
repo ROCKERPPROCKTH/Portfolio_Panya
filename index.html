@@ -30,7 +30,8 @@
             <li><a href="#about" class="nav__link">About</a></li>
             <li><a href="#skills" class="nav__link">Skills</a></li>
             <li><a href="#showcase" class="nav__link">Showcase</a></li>
-            <li><a href="#connect" class="nav__link">Links</a></li>
+            <li><a href="#projects" class="nav__link">Projects</a></li>
+            <li><a href="#connect" class="nav__link">Contact</a></li>
             <li>
               <button
                 class="theme-toggle"
@@ -67,7 +68,7 @@
           </div>
 
           <div class="hero__image">
-            <img src="Assets/Images/Profile.jpg" alt="Portfolio profile photo" />
+            <img src="Assets/Images/Profile.png" alt="Portfolio profile photo" />
           </div>
         </div>
       </section>
@@ -116,7 +117,7 @@
               <div class="skills__info">
                 <h3 class="skills__subtitle">Tools I use</h3>
                 <p class="skills__description">
-                  My experience with game development, scripting, and interface design.
+                  My experience with game development, scripting, interface design and programing languages.
                 </p>
               </div>
 
@@ -285,11 +286,11 @@
       <section class="showcase section" id="showcase">
         <div class="container">
           <div class="showcase__content">
-            <p class="showcase__eyebrow">Project Demo</p>
+            <p class="showcase__eyebrow">Project</p>
             <h2 class="section__title showcase__title">Showcase</h2>
             <p class="showcase__description">
               This short video shows one of the systems I built and how it works in
-              practice. You can update the title and description here later.
+              practice.
             </p>
           </div>
 
@@ -304,46 +305,184 @@
           </div>
 
           <div class="showcase__details">
-            <h3>Video Title</h3>
+            <h3>Character Customization</h3>
             <p>
-              Add your final video title and description here later. The video stays on
-              the same portfolio page so visitors can watch it without leaving the site.
+              this video shows a character customization system I built for a Roblox game. Players can choose from various options to customize their character's appearance, including clothing, accessories, and colors. The system is designed to be user-friendly and intuitive, allowing players to easily create their unique avatars.
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section" id="projects">
+        <div class="container">
+          <div class="projects__header">
+            <p class="showcase__eyebrow">Portfolio</p>
+            <h2 class="section__title projects__title">Projects</h2>
+          </div>
+
+          <div class="projects__filters" aria-label="Project filters">
+            <button class="project__chip is-active" type="button" data-filter="all">All</button>
+            <button class="project__chip" type="button" data-filter="systems">Systems</button>
+            <button class="project__chip" type="button" data-filter="skills">Skills</button>
+            <button class="project__chip" type="button" data-filter="gameplay">Gameplay</button>
+          </div>
+
+          <div class="projects__grid">
+            <article class="project__card" data-tags="systems gameplay roblox">
+              <div class="project__image">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80" alt="Inventory system preview" />
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__type">Systems</span>
+                  <span class="project__year">2026</span>
+                </div>
+                <h3 class="project__title">Inventory System</h3>
+                <p class="project__description">
+                  A flexible item system built to manage loot, equipment, and quick-slot interactions in a playable prototype.
+                </p>
+                <div class="project__tags">
+                  <span class="project__tag">Systems</span>
+                  <span class="project__tag">Roblox</span>
+                </div>
+                <div class="project__links">
+                  <a href="#" aria-label="Open project details"><i class="ri-external-link-line" aria-hidden="true"></i>Demo</a>
+                  <a href="#" aria-label="View source code"><i class="ri-github-fill" aria-hidden="true"></i>Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__card" data-tags="skills ui ux">
+              <div class="project__image">
+                <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=900&q=80" alt="UI design project preview" />
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__type">Skills</span>
+                  <span class="project__year">2025</span>
+                </div>
+                <h3 class="project__title">Game UI Kit</h3>
+                <p class="project__description">
+                  Clean interface panels and menus built to keep gameplay flows simple, readable, and responsive across devices.
+                </p>
+                <div class="project__tags">
+                  <span class="project__tag">Skills</span>
+                  <span class="project__tag">UI/UX</span>
+                </div>
+                <div class="project__links">
+                  <a href="#" aria-label="Open project details"><i class="ri-external-link-line" aria-hidden="true"></i>Preview</a>
+                  <a href="#" aria-label="View source code"><i class="ri-github-fill" aria-hidden="true"></i>Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__card" data-tags="gameplay systems unity">
+              <div class="project__image">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Combat system preview" />
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__type">Gameplay</span>
+                  <span class="project__year">2024</span>
+                </div>
+                <h3 class="project__title">Combat Loop</h3>
+                <p class="project__description">
+                  A responsive combat system focused on timing, enemy behavior, and smooth player feedback during action gameplay.
+                </p>
+                <div class="project__tags">
+                  <span class="project__tag">Gameplay</span>
+                  <span class="project__tag">Unity</span>
+                </div>
+                <div class="project__links">
+                  <a href="#" aria-label="Open project details"><i class="ri-external-link-line" aria-hidden="true"></i>Case</a>
+                  <a href="#" aria-label="View source code"><i class="ri-github-fill" aria-hidden="true"></i>Code</a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project__card" data-tags="skills ui ux">
+              <div class="project__image">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Combat system preview" />
+              </div>
+              <div class="project__body">
+                <div class="project__meta">
+                  <span class="project__type">Skills</span>
+                  <span class="project__year">2024</span>
+                </div>
+                <h3 class="project__title">Combat Loop</h3>
+                <p class="project__description">
+                  A responsive combat system focused on timing, enemy behavior, and smooth player feedback during action gameplay.
+                </p>
+                <div class="project__tags">
+                  <span class="project__tag">Gameplay</span>
+                  <span class="project__tag">Skills</span>
+                </div>
+                <div class="project__links">
+                  <a href="#" aria-label="Open project details"><i class="ri-external-link-line" aria-hidden="true"></i>Case</a>
+                  <a href="#" aria-label="View source code"><i class="ri-github-fill" aria-hidden="true"></i>Code</a>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer" id="connect">
-      <div class="container">
-        <h2 class="footer__title">Contact</h2>
+    <section class="contact section" id="connect">
+      <div class="container contact__container">
+        <div class="contact__info">
+          <p class="contact__eyebrow">Contact</p>
+          <h2 class="section__title contact__title">Let’s work together</h2>
+          <p class="contact__description">
+            I’m open to freelance projects, game ideas, and collaborations. Reach
+            out and I’ll get back to you as soon as possible.
+          </p>
 
-        <div class="footer__social">
-          <a href="mailto:pprock.cpt@gmail.com" class="footer__link footer__link--email">
-            <i class="ri-mail-line" aria-hidden="true"></i>
-            <span>pprock.cpt@gmail.com</span>
-          </a>
-          <a
-            href="https://github.com/ROCKERPPROCKTH"
-            class="footer__link footer__link--github"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ri-github-fill" aria-hidden="true"></i>
-            <span>GitHub</span>
-          </a>
-          <a
-            href="https://www.youtube.com/@DevRock_qsfpx"
-            class="footer__link footer__link--youtube"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <i class="ri-youtube-fill" aria-hidden="true"></i>
-            <span>YouTube</span>
-          </a>
+          <ul class="contact__list">
+            <li class="contact__item">
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <a href="mailto:pprock.cpt@gmail.com">pprock.cpt@gmail.com</a>
+            </li>
+            <li class="contact__item">
+              <i class="ri-github-fill" aria-hidden="true"></i>
+              <a href="https://github.com/ROCKERPPROCKTH" target="_blank" rel="noopener noreferrer">GitHub</a>
+            </li>
+            <li class="contact__item">
+              <i class="ri-youtube-fill" aria-hidden="true"></i>
+              <a href="https://www.youtube.com/@DevRock_qsfpx" target="_blank" rel="noopener noreferrer">YouTube</a>
+            </li>
+          </ul>
         </div>
 
-        <p class="footer__copy">© 2026 Panya. All rights reserved</p>
+        <form class="contact__form" action="#" method="post">
+          <div class="contact__field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" />
+          </div>
+
+          <div class="contact__field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" />
+          </div>
+
+          <div class="contact__field">
+            <label for="title">Title</label>
+            <input id="title" name="title" type="text" placeholder="Project title" />
+          </div>
+
+          <div class="contact__field contact__field--full">
+            <label for="message">Text</label>
+            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..."></textarea>
+          </div>
+
+          <button class="contact__button" type="button">Send contact</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__bottom">
+        <p class="footer__copy">© 2026 DevRock. All rights reserved</p>
       </div>
     </footer>
 
