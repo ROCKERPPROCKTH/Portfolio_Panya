@@ -235,7 +235,7 @@ a {
 
 .hero__image img {
   display: block;
-  width: min(100%, 600px);
+  width: min(100%, 400px);
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center 30%;
